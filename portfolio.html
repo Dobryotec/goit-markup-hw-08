@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Potfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container flex-container">
+        <nav class="site-nav header__site-nav">
+          <a href="./index.html" class="logo site-nav__logo"
+            >Web<span class="logo__part logo__part--dark">Studio</span></a
+          >
+          <ul class="menu site-nav__menu">
+            <li class="menu__item">
+              <a href="./index.html" class="menu__link">Studio</a>
+            </li>
+            <li class="menu__item">
+              <a href="./portfolio.html" class="menu__link current"
+                >Portfolio</a
+              >
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="contacts-wrap">
+          <ul class="contacts flex-container">
+            <li class="contacts__item">
+              <a href="mailto:info@devstudio.com" class="contacts__link">
+                <svg class="contacts__icon" width="16" height="12">
+                  <use href="./images/sprite-svg.svg#icon-icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="contats__item">
+              <a href="tel:+12127724150" class="contacts__link">
+                <svg class="contacts__icon" width="10" height="16">
+                  <use
+                    href="./images/sprite-svg.svg#icon-icon-smartphone"
+                  ></use>
+                </svg>
+                +1 212-772-4150</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="portfolio">
+        <div class="container">
+          <h1 class="portfolio__title visually-hidden">Portfolio</h1>
+          <ul
+            class="portfolio-buttons-list portfolio__portfolio-buttons-list lists"
+          >
+            <li class="portfolio-buttons-list__item">
+              <button type="button" class="portfolio-buttons-list__button">
+                All
+              </button>
+            </li>
+            <li class="portfolio-buttons-list__item">
+              <button type="button" class="portfolio-buttons-list__button">
+                Web-sites
+              </button>
+            </li>
+            <li class="portfolio-buttons-list__item">
+              <button type="button" class="portfolio-buttons-list__button">
+                Apps
+              </button>
+            </li>
+            <li class="portfolio-buttons-list__item">
+              <button type="button" class="portfolio-buttons-list__button">
+                Design
+              </button>
+            </li>
+            <li class="portfolio-buttons-list__item">
+              <button type="button" class="portfolio-buttons-list__button">
+                Marketing
+              </button>
+            </li>
+          </ul>
+          <ul class="portfolio-work-list portfolio__portfolio-work-list lists">
+            <li class="portfolio-work-list__item">
+              <a href="" class="portfolio-work-list__link">
+                <div class="portfolio-work-list__wrapper">
+                  <img
+                    src="./images/technoduck.jpg"
+                    alt="technoduck"
+                    width="370"
+                  />
+                  <p class="portfolio-work-list__text">
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
+                </div>
+                <div class="portfolio-work-list__content">
+                  <h2 class="portfolio-work-list__title">Technoduck</h2>
+                  <p class="portfolio-work-list__title-text">Web-site</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-work-list__item">
+              <a href="" class="portfolio-work-list__link">
+                <div class="portfolio-work-list__wrapper">
+                  <img src="./images/poster.jpg" alt="poster" width="370" />
+                  <p class="portfolio-work-list__text">
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
+                </div>
+                <div class="portfolio-work-list__content">
+                  <h2 class="portfolio-work-list__title">
+                    Poster new orlean vs golden star
+                  </h2>
+                  <p class="portfolio-work-list__title-text">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-work-list__item">
+              <a href="" class="portfolio-work-list__link">
+                <div class="portfolio-work-list__wrapper">
+                  <img src="./images/seafood.jpg" alt="seafood" width="370" />
+                  <p class="portfolio-work-list__text">
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
+                </div>
+                <div class="portfolio-work-list__content">
+                  <h2 class="portfolio-work-list__title">Seafood restaurant</h2>
+                  <p class="portfolio-work-list__title-text">Apps</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-work-list__item">
+              <a href="" class="portfolio-work-list__link">
+                <div class="portfolio-work-list__wrapper">
+                  <img src="./images/project.jpg" alt="project" width="370" />
+                  <p class="portfolio-work-list__text">
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
+                </div>
+                <div class="portfolio-work-list__content">
+                  <h2 class="portfolio-work-list__title">Project prime</h2>
+                  <p class="portfolio-work-list__title-text">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-work-list__item">
+              <a href="" class="portfolio-work-list__link">
+                <div class="portfolio-work-list__wrapper">
+                  <img
+                    src="./images/project-boxes.jpg"
+                    alt="project-boxes"
+                    width="370"
+                  />
+                  <p class="portfolio-work-list__text">
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
+                </div>
+                <div class="portfolio-work-list__content">
+                  <h2 class="portfolio-work-list__title">Project boxes</h2>
+                  <p class="portfolio-work-list__title-text">Apps</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-work-list__item">
+              <a href="" class="portfolio-work-list__link">
+                <div class="portfolio-work-list__wrapper">
+                  <img
+                    src="./images/inspiration.jpg"
+                    alt="inspiration"
+                    width="370"
+                  />
+                  <p class="portfolio-work-list__text">
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
+                </div>
+                <div class="portfolio-work-list__content">
+                  <h2 class="portfolio-work-list__title">
+                    Inspiration has no borders
+                  </h2>
+                  <p class="portfolio-work-list__title-text">Web-site</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-work-list__item">
+              <a href="" class="portfolio-work-list__link">
+                <div class="portfolio-work-list__wrapper">
+                  <img src="./images/limited.jpg" alt="limited" width="370" />
+                  <p class="portfolio-work-list__text">
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
+                </div>
+                <div class="portfolio-work-list__content">
+                  <h2 class="portfolio-work-list__title">Limited edition</h2>
+                  <p class="portfolio-work-list__title-text">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-work-list__item">
+              <a href="" class="portfolio-work-list__link">
+                <div class="portfolio-work-list__wrapper">
+                  <img
+                    src="./images/project-lab.jpg"
+                    alt="project-lab"
+                    width="370"
+                  />
+                  <p class="portfolio-work-list__text">
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
+                </div>
+                <div class="portfolio-work-list__content">
+                  <h2 class="portfolio-work-list__title">Project lab</h2>
+                  <p class="portfolio-work-list__title-text">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-work-list__item">
+              <a href="" class="portfolio-work-list__link">
+                <div class="portfolio-work-list__wrapper">
+                  <img src="./images/growing.jpg" alt="growing" width="370" />
+                  <p class="portfolio-work-list__text">
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
+                </div>
+                <div class="portfolio-work-list__content">
+                  <h2 class="portfolio-work-list__title">Growing business</h2>
+                  <p class="portfolio-work-list__title-text">Apps</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer__logo-wrap">
+          <a href="./index.html" class="logo footer__logo"
+            >Web<span class="logo__part logo__part--light">Studio</span></a
+          >
+          <address class="adress">
+            <ul class="connection lists">
+              <li class="connection__item">
+                <a
+                  href="https://goo.gl/maps/N6QWvGhrMjkVAGEb9"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="connection__link"
+                  >695 Park Ave, New York, NY 10065,<br />
+                  United States</a
+                >
+              </li>
+              <li class="connection__item">
+                <a
+                  href="mailto:info@example.com"
+                  class="connection__link connection__link--grey"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="connection__item">
+                <a
+                  href="tel:+12127724150"
+                  class="connection__link connection__link--grey"
+                  >+1 212-772-4150
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer__footer-wrap">
+          <b class="footer__subtitle-text">find us on</b>
+          <ul class="social-set footer__social-set">
+            <li class="social-set__item">
+              <a class="social-set__link" href=""
+                ><svg class="social-set__icon" width="20" height="20">
+                  <use
+                    href="./images/sprite-svg.svg#icon-icon-instagram"
+                  ></use></svg
+              ></a>
+            </li>
+            <li class="social-set__item">
+              <a class="social-set__link" href=""
+                ><svg class="social-set__icon" width="20" height="20">
+                  <use
+                    href="./images/sprite-svg.svg#icon-icon-twitter"
+                  ></use></svg
+              ></a>
+            </li>
+            <li class="social-set__item">
+              <a class="social-set__link" href=""
+                ><svg class="social-set__icon" width="20" height="20">
+                  <use
+                    href="./images/sprite-svg.svg#icon-icon-facebook"
+                  ></use></svg
+              ></a>
+            </li>
+            <li class="social-set__item">
+              <a class="social-set__link" href=""
+                ><svg class="social-set__icon" width="20" height="20">
+                  <use
+                    href="./images/sprite-svg.svg#icon-icon-linkedin"
+                  ></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <form class="form footer__form">
+          <b class="form__title">subscribe to the newsletter</b>
+          <div class="form__form-wrap">
+            <input
+              type="email"
+              name="mail"
+              class="form__input"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="form__button">
+              Subscribe
+              <svg class="form__icon-send" width="24" height="24">
+                <use href="./images/sprite-svg.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
