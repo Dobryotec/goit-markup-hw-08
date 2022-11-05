@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container flex-container">
         <nav class="site-nav header__site-nav">
           <a href="./index.html" class="logo site-nav__logo"
@@ -61,15 +61,62 @@
             </li>
           </ul>
         </div>
+        
+          <button type="button" class="menu-open-btn"> 0
+        </button>
+        <div class="mob-menu">
+          <button type="button" class="menu-close-btn"> x
+
+        </button>
+        <ul class="mob-menu-list lists">
+            <li class="mob-menu__item">
+              <a href="./index.html" class="mob-menu__link">Studio</a>
+            </li>
+            <li class="mob-menu__item">
+              <a href="./portfolio.html" class="mob-menu__link">Portfolio</a>
+            </li>
+            <li class="mob-menu__item">
+              <a href="" class="mob-menu__link">Contacts</a>
+            </li>
+          </ul>
+          <div class="mob-contacts-wrap">
+          <ul class="mob-contacts">
+            <li class="mob-contacts__item">
+              <a href="tel:+12127724150" class="mob-contacts__link">
+                +1 212-772-4150</a
+              >
+            </li>
+            <li class="mob-contacts__item">
+              <a href="mailto:info@devstudio.com" class="mob-contacts__link mob-contacts__link--grey">
+                
+                info@devstudio.com</a
+              >
+            </li>
+            
+          </ul>
+        </div>
+        <ul class="mob-soc-list lists">
+          <li class="mob-soc-list__item">
+            <a class="mob-soc-list__link" href="" target="_blank" rel="noopener noreferrer nofollow">Instagram</a></li>
+          <li class="mob-soc-list__item">
+            <a class="mob-soc-list__link" href="" target="_blank" rel="noopener noreferrer nofollow">Twitter</a></li>
+          <li class="mob-soc-list__item">
+            <a class="mob-soc-list__link" href="" target="_blank" rel="noopener noreferrer nofollow">Facebook</a></li>
+          <li class="mob-soc-list__item">
+            <a class="mob-soc-list__link" href="" target="_blank" rel="noopener noreferrer nofollow">LinkedIn</a></li>
+        </ul>
+        </div>
+        
+        
       </div>
-    </header> -->
+    </header>
     <main class="main">
-      <section class="hero main__hero">
+      <!-- <section class="hero main__hero">
         <h1 class="hero__title">Effective solutions for your business</h1>
         <button type="button" class="hero__btn" data-modal-open>
           Request our service
         </button>
-      </section>
+      </section> -->
       <!-- <section class="our-qualities">
         <div class="container">
           <h2 class="visually-hidden">Our qualities</h2>
@@ -166,17 +213,29 @@
         </div>
       </section> -->
 
-      <section class="team">
+      <!-- <section class="team">
         <div class="container">
           <h2 class="team__title">Our Team</h2>
           <ul class="workers team__workers lists">
             <li class="workers__item">
-              <img
-                src="./images/product-designer.jpg"
-                alt="product designer"
-                width="270"
-                height="260"
+              <picture>
+                <source srcset="
+                ./images/product-designer-desk-1x.jpg 1x,
+                ./images/product-designer-desk-2x.jpg 2x"
+                media="(min-width: 1200px)">
+                <source srcset="
+                ./images/product-designer-tab-1x.jpg 1x,
+                ./images/product-designer-tab-2x.jpg 2x"
+                media="(min-width: 768px)">
+                <source srcset="
+                ./images/product-designer-mob-1x.jpg 1x,
+                ./images/product-designer-mob-2x.jpg 2x"
+                media="(max-width: 767px)">
+               <img
+                src="./images/product-designer-desk-1x.jpg"
+                alt="product designer" width="270" height="260"
               />
+              </picture>
               <div class="workers__social-wrap">
                 <h3 lang="uk" class="workers__subtitle">Ігор Дем'яненко</h3>
                 <p class="workers__subtitle-text">Product Designer</p>
@@ -221,12 +280,25 @@
               </div>
             </li>
             <li class="workers__item">
-              <img
-                src="./images/frontend-developer.jpg"
+              <picture>
+                <source srcset="
+                ./images/frontend-developer-desk-1x.jpg 1x,
+                ./images/frontend-developer-desk-2x.jpg 2x"
+                media="(min-width: 1200px)">
+                <source srcset="
+                ./images/frontend-developer-tab-1x.jpg 1x,
+                ./images/frontend-developer-tab-2x.jpg 2x"
+                media="(min-width: 768px)">
+                <source srcset="
+                ./images/frontend-developer-mob-1x.jpg 1x,
+                ./images/frontend-developer-mob-2x.jpg 2x"
+                media="(max-width: 767px)">
+               <img
+                src="./images/frontend-developer-desk-1x.jpg"
                 alt="frontend developer"
-                width="270"
-                height="260"
+              
               />
+              </picture>
               <div class="workers__social-wrap">
                 <h3 lang="uk" class="workers__subtitle">Ольга Рєпіна</h3>
                 <p class="workers__subtitle-text">Frontend Developer</p>
@@ -271,12 +343,25 @@
               </div>
             </li>
             <li class="workers__item">
-              <img
-                src="./images/marketing.jpg"
+              <picture>
+                <source srcset="
+                ./images/marketing-desk-1x.jpg 1x,
+                ./images/marketing-desk-2x.jpg 2x"
+                media="(min-width: 1200px)">
+                <source srcset="
+                ./images/marketing-tab-1x.jpg 1x,
+                ./images/marketing-tab-2x.jpg 2x"
+                media="(min-width: 768px)">
+                <source srcset="
+                ./images/marketing-mob-1x.jpg 1x,
+                ./images/marketing-mob-2x.jpg 2x"
+                media="(max-width: 767px)">
+               <img
+                src="./images/frontend-developer-desk-1x.jpg"
                 alt="marketing"
-                width="270"
-                height="260"
+          
               />
+              </picture>
               <div class="workers__social-wrap">
                 <h3 lang="uk" class="workers__subtitle">Микола Тарасов</h3>
                 <p class="workers__subtitle-text">Marketing</p>
@@ -321,12 +406,25 @@
               </div>
             </li>
             <li class="workers__item">
-              <img
-                src="./images/ui-designer.jpg"
+              <picture>
+                <source srcset="
+                ./images/ui-designer-desk-1x.jpg 1x,
+                ./images/ui-designer-desk-2x.jpg 2x"
+                media="(min-width: 1200px)">
+                <source srcset="
+                ./images/ui-designer-tab-1x.jpg 1x,
+                ./images/ui-designer-tab-2x.jpg 2x"
+                media="(min-width: 768px)">
+                <source srcset="
+                ./images/ui-designer-mob-1x.jpg 1x,
+                ./images/ui-designer-mob-2x.jpg 2x"
+                media="(max-width: 767px)">
+               <img
+                src="./images/frontend-developer-desk-1x.jpg"
                 alt="ui designer"
-                width="270"
-                height="260"
+              
               />
+              </picture>
               <div class="workers__social-wrap">
                 <h3 lang="uk" class="workers__subtitle">Михайло Єрмаков</h3>
                 <p class="workers__subtitle-text">UI Designer</p>
@@ -372,8 +470,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="customers">
+      </section> -->
+      <!-- <section class="customers">
         <div class="container">
           <h2 class="customers__title">Regular Customers</h2>
           <ul class="customers-list customers__customers-list">
@@ -427,10 +525,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!-- <footer class="footer">
       <div class="container footer-container">
+        <div class="common-wrap footer__common-wrap">
         <div class="footer__logo-wrap">
           <a href="./index.html" class="logo footer__logo"
             >Web<span class="logo__part logo__part--light">Studio</span></a
@@ -500,6 +599,7 @@
               ></a>
             </li>
           </ul>
+        </div>
         </div>
         <form class="form footer__form">
           <b class="form__title">subscribe to the newsletter</b>
