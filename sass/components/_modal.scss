@@ -22,6 +22,7 @@
     padding: 40px;
     @include desktop {
       width: 528px;
+      width: 100%;
       min-height: 581px;
     }
   }
@@ -92,11 +93,14 @@
 
 .modal__title {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 4vw;
   line-height: 1.15;
   text-align: center;
   color: var(--title-text-color);
   margin-bottom: 12px;
+  @include mobile {
+    font-size: 20px;
+  }
 }
 .form-element__comments {
   padding: 12px 16px;

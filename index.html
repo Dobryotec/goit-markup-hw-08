@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container flex-container">
         <nav class="site-nav header__site-nav">
           <a href="./index.html" class="logo site-nav__logo"
@@ -40,7 +40,7 @@
           </ul>
         </nav>
         <div class="contacts-wrap">
-          <ul class="contacts flex-container">
+          <ul class="contacts flex-container-contacts">
             <li class="contacts__item">
               <a href="mailto:info@devstudio.com" class="contacts__link">
                 <svg class="contacts__icon" width="16" height="12">
@@ -61,55 +61,96 @@
             </li>
           </ul>
         </div>
-        
-          <button type="button" class="menu-open-btn"> 0
+        <button type="button" class="menu-open-btn" data-menu-open>
+          <svg class="icon-mob-menu-open" width="40" height="40">
+            <use href="./images/sprite-svg.svg#icon-mob-menu"></use>
+          </svg>
         </button>
-        <div class="mob-menu">
-          <button type="button" class="menu-close-btn"> x
-
-        </button>
-        <ul class="mob-menu-list lists">
-            <li class="mob-menu__item">
-              <a href="./index.html" class="mob-menu__link">Studio</a>
-            </li>
-            <li class="mob-menu__item">
-              <a href="./portfolio.html" class="mob-menu__link">Portfolio</a>
-            </li>
-            <li class="mob-menu__item">
-              <a href="" class="mob-menu__link">Contacts</a>
-            </li>
-          </ul>
-          <div class="mob-contacts-wrap">
-          <ul class="mob-contacts">
-            <li class="mob-contacts__item">
-              <a href="tel:+12127724150" class="mob-contacts__link">
-                +1 212-772-4150</a
-              >
-            </li>
-            <li class="mob-contacts__item">
-              <a href="mailto:info@devstudio.com" class="mob-contacts__link mob-contacts__link--grey">
-                
-                info@devstudio.com</a
-              >
-            </li>
-            
-          </ul>
-        </div>
-        <ul class="mob-soc-list lists">
-          <li class="mob-soc-list__item">
-            <a class="mob-soc-list__link" href="" target="_blank" rel="noopener noreferrer nofollow">Instagram</a></li>
-          <li class="mob-soc-list__item">
-            <a class="mob-soc-list__link" href="" target="_blank" rel="noopener noreferrer nofollow">Twitter</a></li>
-          <li class="mob-soc-list__item">
-            <a class="mob-soc-list__link" href="" target="_blank" rel="noopener noreferrer nofollow">Facebook</a></li>
-          <li class="mob-soc-list__item">
-            <a class="mob-soc-list__link" href="" target="_blank" rel="noopener noreferrer nofollow">LinkedIn</a></li>
-        </ul>
-        </div>
-        
-        
       </div>
-    </header> -->
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+          <div class="mob-menu-top">
+            <button type="button" class="menu-close-btn" data-menu-close>
+              <svg class="icon-mob-menu-close" width="40" height="40">
+                <use href="./images/sprite-svg.svg#icon-mob-menu-close"></use>
+              </svg>
+            </button>
+            <ul class="mob-menu-list lists">
+              <li class="mob-menu__item">
+                <a
+                  href="./index.html"
+                  class="mob-menu__link mob-menu__link--active"
+                  >Studio</a
+                >
+              </li>
+              <li class="mob-menu__item">
+                <a href="./portfolio.html" class="mob-menu__link">Portfolio</a>
+              </li>
+              <li class="mob-menu__item">
+                <a href="" class="mob-menu__link">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu__bottom">
+            <div class="mob-contacts-wrap">
+              <ul class="mob-contacts lists">
+                <li class="mob-contacts__item">
+                  <a href="tel:+12127724150" class="mob-contacts__link">
+                    +1 212-772-4150</a
+                  >
+                </li>
+                <li class="mob-contacts__item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="mob-contacts__link mob-contacts__link--grey"
+                  >
+                    info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="mob-soc-list lists">
+                <li class="mob-soc-list__item">
+                  <a
+                    class="mob-soc-list__link"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="mob-soc-list__item">
+                  <a
+                    class="mob-soc-list__link"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >Twitter</a
+                  >
+                </li>
+                <li class="mob-soc-list__item">
+                  <a
+                    class="mob-soc-list__link"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="mob-soc-list__item">
+                  <a
+                    class="mob-soc-list__link"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <main class="main">
       <section class="hero main__hero">
         <h1 class="hero__title">Effective solutions for your business</h1>
@@ -219,27 +260,33 @@
           <ul class="workers team__workers lists">
             <li class="workers__item">
               <picture>
-                <source 
-               media="(min-width: 1200px)"
-                 srcset="
-
-                ./images/product-designer-desk-1x.jpg 1x,
-                ./images/product-designer-desk-2x.jpg 2x"
-                >
                 <source
-                media="(min-width: 768px)" srcset="
-                ./images/product-designer-tab-1x.jpg 1x,
-                ./images/product-designer-tab-2x.jpg 2x"
-                >
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/product-designer-desk-1x.jpg 1x,
+                    ./images/product-designer-desk-2x.jpg 2x
+                  "
+                />
                 <source
-                media="(max-width: 767px)" srcset="
-                ./images/product-designer-mob-1x.jpg 1x,
-                ./images/product-designer-mob-2x.jpg 2x"
-                >
-               <img
-                src="./images/product-designer-desk-1x.jpg"
-                alt="product designer" width="270" height="260"
-              />
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/product-designer-tab-1x.jpg 1x,
+                    ./images/product-designer-tab-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/product-designer-mob-1x.jpg 1x,
+                    ./images/product-designer-mob-2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/product-designer-desk-1x.jpg"
+                  alt="product designer"
+                  width="270"
+                  height="260"
+                />
               </picture>
               <div class="workers__social-wrap">
                 <h3 lang="uk" class="workers__subtitle">Ігор Дем'яненко</h3>
@@ -286,23 +333,31 @@
             </li>
             <li class="workers__item">
               <picture>
-                <source srcset="
-                ./images/frontend-developer-desk-1x.jpg 1x,
-                ./images/frontend-developer-desk-2x.jpg 2x"
-                media="(min-width: 1200px)">
-                <source srcset="
-                ./images/frontend-developer-tab-1x.jpg 1x,
-                ./images/frontend-developer-tab-2x.jpg 2x"
-                media="(min-width: 768px)">
-                <source srcset="
-                ./images/frontend-developer-mob-1x.jpg 1x,
-                ./images/frontend-developer-mob-2x.jpg 2x"
-                media="(max-width: 767px)">
-               <img
-                src="./images/frontend-developer-desk-1x.jpg"
-                alt="frontend developer"
-              
-              />
+                <source
+                  srcset="
+                    ./images/frontend-developer-desk-1x.jpg 1x,
+                    ./images/frontend-developer-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/frontend-developer-tab-1x.jpg 1x,
+                    ./images/frontend-developer-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/frontend-developer-mob-1x.jpg 1x,
+                    ./images/frontend-developer-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/frontend-developer-desk-1x.jpg"
+                  alt="frontend developer"
+                />
               </picture>
               <div class="workers__social-wrap">
                 <h3 lang="uk" class="workers__subtitle">Ольга Рєпіна</h3>
@@ -349,23 +404,31 @@
             </li>
             <li class="workers__item">
               <picture>
-                <source srcset="
-                ./images/marketing-desk-1x.jpg 1x,
-                ./images/marketing-desk-2x.jpg 2x"
-                media="(min-width: 1200px)">
-                <source srcset="
-                ./images/marketing-tab-1x.jpg 1x,
-                ./images/marketing-tab-2x.jpg 2x"
-                media="(min-width: 768px)">
-                <source srcset="
-                ./images/marketing-mob-1x.jpg 1x,
-                ./images/marketing-mob-2x.jpg 2x"
-                media="(max-width: 767px)">
-               <img
-                src="./images/frontend-developer-desk-1x.jpg"
-                alt="marketing"
-          
-              />
+                <source
+                  srcset="
+                    ./images/marketing-desk-1x.jpg 1x,
+                    ./images/marketing-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/marketing-tab-1x.jpg 1x,
+                    ./images/marketing-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/marketing-mob-1x.jpg 1x,
+                    ./images/marketing-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/frontend-developer-desk-1x.jpg"
+                  alt="marketing"
+                />
               </picture>
               <div class="workers__social-wrap">
                 <h3 lang="uk" class="workers__subtitle">Микола Тарасов</h3>
@@ -412,23 +475,31 @@
             </li>
             <li class="workers__item">
               <picture>
-                <source srcset="
-                ./images/ui-designer-desk-1x.jpg 1x,
-                ./images/ui-designer-desk-2x.jpg 2x"
-                media="(min-width: 1200px)">
-                <source srcset="
-                ./images/ui-designer-tab-1x.jpg 1x,
-                ./images/ui-designer-tab-2x.jpg 2x"
-                media="(min-width: 768px)">
-                <source srcset="
-                ./images/ui-designer-mob-1x.jpg 1x,
-                ./images/ui-designer-mob-2x.jpg 2x"
-                media="(max-width: 767px)">
-               <img
-                src="./images/frontend-developer-desk-1x.jpg"
-                alt="ui designer"
-              
-              />
+                <source
+                  srcset="
+                    ./images/ui-designer-desk-1x.jpg 1x,
+                    ./images/ui-designer-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/ui-designer-tab-1x.jpg 1x,
+                    ./images/ui-designer-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/ui-designer-mob-1x.jpg 1x,
+                    ./images/ui-designer-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/frontend-developer-desk-1x.jpg"
+                  alt="ui designer"
+                />
               </picture>
               <div class="workers__social-wrap">
                 <h3 lang="uk" class="workers__subtitle">Михайло Єрмаков</h3>
@@ -531,80 +602,81 @@
           </ul>
         </div>
       </section>
+      -->
     </main>
     <footer class="footer">
       <div class="container footer-container">
         <div class="common-wrap footer__common-wrap">
-        <div class="footer__logo-wrap">
-          <a href="./index.html" class="logo footer__logo"
-            >Web<span class="logo__part logo__part--light">Studio</span></a
-          >
-          <address class="adress">
-            <ul class="connection lists">
-              <li class="connection__item">
-                <a
-                  href="https://goo.gl/maps/N6QWvGhrMjkVAGEb9"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="connection__link"
-                  >695 Park Ave, New York, NY 10065,<br />
-                  United States</a
-                >
+          <div class="footer__logo-wrap">
+            <a href="./index.html" class="logo footer__logo"
+              >Web<span class="logo__part logo__part--light">Studio</span></a
+            >
+            <address class="adress">
+              <ul class="connection lists">
+                <li class="connection__item">
+                  <a
+                    href="https://goo.gl/maps/N6QWvGhrMjkVAGEb9"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="connection__link"
+                    >695 Park Ave, New York, NY 10065,<br />
+                    United States</a
+                  >
+                </li>
+                <li class="connection__item">
+                  <a
+                    href="mailto:info@example.com"
+                    class="connection__link connection__link--grey"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="connection__item">
+                  <a
+                    href="tel:+12127724150"
+                    class="connection__link connection__link--grey"
+                    >+1 212-772-4150
+                  </a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__footer-wrap">
+            <b class="footer__subtitle-text">find us on</b>
+            <ul class="social-set footer__social-set">
+              <li class="social-set__item">
+                <a class="social-set__link" href=""
+                  ><svg class="social-set__icon" width="20" height="20">
+                    <use
+                      href="./images/sprite-svg.svg#icon-icon-instagram"
+                    ></use></svg
+                ></a>
               </li>
-              <li class="connection__item">
-                <a
-                  href="mailto:info@example.com"
-                  class="connection__link connection__link--grey"
-                  >info@example.com</a
-                >
+              <li class="social-set__item">
+                <a class="social-set__link" href=""
+                  ><svg class="social-set__icon" width="20" height="20">
+                    <use
+                      href="./images/sprite-svg.svg#icon-icon-twitter"
+                    ></use></svg
+                ></a>
               </li>
-              <li class="connection__item">
-                <a
-                  href="tel:+12127724150"
-                  class="connection__link connection__link--grey"
-                  >+1 212-772-4150
-                </a>
+              <li class="social-set__item">
+                <a class="social-set__link" href=""
+                  ><svg class="social-set__icon" width="20" height="20">
+                    <use
+                      href="./images/sprite-svg.svg#icon-icon-facebook"
+                    ></use></svg
+                ></a>
+              </li>
+              <li class="social-set__item">
+                <a class="social-set__link" href=""
+                  ><svg class="social-set__icon" width="20" height="20">
+                    <use
+                      href="./images/sprite-svg.svg#icon-icon-linkedin"
+                    ></use></svg
+                ></a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer__footer-wrap">
-          <b class="footer__subtitle-text">find us on</b>
-          <ul class="social-set footer__social-set">
-            <li class="social-set__item">
-              <a class="social-set__link" href=""
-                ><svg class="social-set__icon" width="20" height="20">
-                  <use
-                    href="./images/sprite-svg.svg#icon-icon-instagram"
-                  ></use></svg
-              ></a>
-            </li>
-            <li class="social-set__item">
-              <a class="social-set__link" href=""
-                ><svg class="social-set__icon" width="20" height="20">
-                  <use
-                    href="./images/sprite-svg.svg#icon-icon-twitter"
-                  ></use></svg
-              ></a>
-            </li>
-            <li class="social-set__item">
-              <a class="social-set__link" href=""
-                ><svg class="social-set__icon" width="20" height="20">
-                  <use
-                    href="./images/sprite-svg.svg#icon-icon-facebook"
-                  ></use></svg
-              ></a>
-            </li>
-            <li class="social-set__item">
-              <a class="social-set__link" href=""
-                ><svg class="social-set__icon" width="20" height="20">
-                  <use
-                    href="./images/sprite-svg.svg#icon-icon-linkedin"
-                  ></use></svg
-              ></a>
-            </li>
-          </ul>
-        </div>
+          </div>
         </div>
         <form class="form footer__form">
           <b class="form__title">subscribe to the newsletter</b>
@@ -718,5 +790,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
