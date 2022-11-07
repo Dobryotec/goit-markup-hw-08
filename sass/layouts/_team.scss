@@ -37,9 +37,15 @@ margin-bottom: 50px;
   // &:not(:first-child) {
   //   margin-left: 30px;
   // }
-  gap: 30px;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  
   @include tablet {
-   flex-basis: calc((100% - 30px) / 2); 
+   flex-basis: calc((100% - 30px) / 2);
+   &:not(:last-child) {
+    margin-bottom: 0;
+  }; 
   }
   @include desktop {
    flex-basis: calc((100% - 90px) / 4); 
@@ -63,8 +69,10 @@ margin-bottom: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 16px;
-  margin-bottom: 30px;
+  padding-top: 16px;
+  padding-bottom: 24px;
+  
+
 }
 .social-list__item {
   list-style: none;
@@ -73,6 +81,7 @@ margin-bottom: 50px;
   &:not(:first-child) {
     margin-left: 10px;
   }
+  
 }
 .social-list__link {
   width: 100%;

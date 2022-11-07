@@ -9,9 +9,9 @@
 }
 .footer__logo-wrap {
  text-align: center;
+ margin-bottom: 48px;
  @include tablet {
-    padding-left: 60px;
-    margin-bottom: 50px;
+  margin-bottom: 0;
   }
  @include desktop {
   text-align: left;
@@ -39,6 +39,9 @@
     color: var(--place-color);
   }
 }
+.connection__item:nth-child(2n) {
+  margin-bottom: 8px;
+}
 
 .footer__subtitle-text {
   font-weight: 700;
@@ -61,10 +64,10 @@
   margin-bottom: 60px;
   @include tablet {
     margin-left: 165px;
+    margin-bottom: 0;
   }
   @include desktop {
     margin-left: 70px;
-    margin-right: 93px;
     text-align: left;
   }
 }
@@ -107,5 +110,11 @@
   @include tablet {
   display: flex;
   align-items: baseline;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+@include desktop {
+  margin-bottom: 0;
+  margin-right: 93px;
 }
 }

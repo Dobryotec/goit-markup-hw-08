@@ -77,9 +77,15 @@ body {
 }
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 }
 
 .flex-container {
@@ -165,7 +171,7 @@ body {
 .current::after {
   content: "";
   position: absolute;
-  bottom: -34px;
+  bottom: -35px;
   left: 0;
   width: 100%;
   height: 4px;
@@ -174,7 +180,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .current::after {
-    bottom: -29px;
+    bottom: -30px;
   }
 }
 
@@ -606,11 +612,16 @@ body {
   background-color: var(--background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  gap: 30px;
+}
+.workers__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .workers__item {
     flex-basis: calc((100% - 30px) / 2);
+  }
+  .workers__item:not(:last-child) {
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -638,8 +649,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 16px;
-  margin-bottom: 30px;
+  padding-top: 16px;
+  padding-bottom: 24px;
 }
 
 .social-list__item {
@@ -873,11 +884,11 @@ body {
 
 .footer__logo-wrap {
   text-align: center;
+  margin-bottom: 48px;
 }
 @media screen and (min-width: 768px) {
   .footer__logo-wrap {
-    padding-left: 60px;
-    margin-bottom: 50px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -906,6 +917,10 @@ body {
   color: var(--place-color);
 }
 
+.connection__item:nth-child(2n) {
+  margin-bottom: 8px;
+}
+
 .footer__subtitle-text {
   font-weight: 700;
   font-size: 14px;
@@ -929,12 +944,12 @@ body {
 @media screen and (min-width: 768px) {
   .footer__footer-wrap {
     margin-left: 165px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__footer-wrap {
     margin-left: 70px;
-    margin-right: 93px;
     text-align: left;
   }
 }
@@ -978,6 +993,14 @@ body {
   .footer__common-wrap {
     display: flex;
     align-items: baseline;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__common-wrap {
+    margin-bottom: 0;
+    margin-right: 93px;
   }
 }
 
@@ -1303,8 +1326,4 @@ body {
     flex-direction: row;
     align-items: baseline;
   }
-}
-
-.footer__footer-wrap {
-  margin-top: 48px;
 }/*# sourceMappingURL=main.css.map */
